@@ -18,7 +18,8 @@
         <div class="header-section1">
             <div class="header-logo">
                 <h4 class="header-logo-text">DigiCollect</h4>
-                <img src="https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3N8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="logo" >
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvALWz6KtmxHl2srndzgfSv4E1xKGgEZXWQ&usqp=CAU"
+                    alt="logo">
             </div>
 
             <div class="header-center-content">
@@ -32,15 +33,15 @@
                 <i class='fa fa-bell-o header-notify'></i>
                 <i class="fa fa-th-large menu"></i>
                 <button class="time">15:30:21 IST</button>
-                <img src="https://reqres.in/img/faces/7-image.jpg" alt="profile img">
+                <img src="https://reqres.in/img/faces/5-image.jpg" alt="profile img">
                 <p class="name">Johan Deo</p>
                 <i class="fa fa-chevron-down name-dropdown"></i>
             </div>
         </div>
 
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="menuNav">
             <a href="#dashboard"><i class="fa fa-th-large menu"></i>Dashboard</a>
-            <a href="#companyinfo"><i class="far fa-file-alt"></i>Company Info</a>
+            <a href="#companyinfo"><i class="far fa-file-alt"></i>Company Info<i class="fa fa-chevron-down"></i></a>
             <div class="dropdown">
                 <button class="dropbtn">
                     <i class="far fa-user"></i>
@@ -48,26 +49,39 @@
                     <i class="fa fa-chevron-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">Calender</a>
+                    <a href="#">Calender<i class="fa fa-caret-down"></i></a>
                     <a href="#">Event Type</a>
-                    <a href="#">Profile</a>
+                    <a href="#">Profile<i class="fa fa-caret-down"></i></a>
                 </div>
             </div>
-            <a href="#jobportal"><i class="fa fa-suitcase"></i> Job Portal</a>
-            <a href="#attendence"><i class="fas fa-users"></i>Attendance</a>
-            <a href="#payroll"><i class="fas fa-sync-alt"></i>Payroll</a>
+            <a href="#jobportal"><i class="fa fa-suitcase"></i> Job Portal <i class="fa fa-chevron-down"></i></a>
+            <a href="#attendence"><i class="fas fa-users"></i>Attendance <i class="fa fa-chevron-down"></i></a>
+            <a href="#payroll"><i class="fas fa-sync-alt"></i>Payroll <i class="fa fa-chevron-down"></i></a>
             <a href="#benefits"><i class="fab fa-wpforms"></i>Benefits</a>
-            <a href="#policies"><i class="far fa-window-maximize"></i>Policies</a>
+            <a href="#policies"><i class="far fa-window-maximize"></i>Policies <i class="fa fa-chevron-down"></i></a>
             <a href="#analytics"><i class="fas fa-chart-bar"></i>Analytics</a>
-            <a href="#settings"><i class="fa fa-cog"></i>Settings</a>
+            <a href="#settings"><i class="fa fa-cog"></i>Settings <i class="fa fa-chevron-down"></i></a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuResponsive()">&#9776;</a>
         </div>
-    </header>    
-    
+    </header>
 
-    <div id="user-cards">
-        
-    </div>
+    <main>
+        <div class="profile-header-content">
+            <div class="profile-text">Profile</div>
+
+            <div class="btn-right-content">
+                <button class="edit"><i class="far fa-user"></i><i class="fas fa-pen"></i></button>
+                <button class="filter"><i class="fas fa-filter"></i>Filter</button>
+                <button class="create"><i class="fas fa-plus-circle"></i>Create New</button>
+                <button class="menu-btn"><i class="fas fa-bars"></i><i class="fa fa-th-large menu"></i></button>
+            </div>
+        </div>
+
+        <div id="user-cards">
+
+        </div>
+
+    </main>
 
     <footer>
         <button class="help-desk-text"><i class="fas fa-circle-notch"></i>Help Desk</button>
