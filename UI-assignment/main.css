@@ -1,9 +1,10 @@
-body {margin:0;font-family:Arial}
+body {margin:0;font-family:'Poppins'}
 
 .header-section1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #0873ee;
     color: #fff;
     height: 60px;
@@ -37,6 +38,36 @@ body {margin:0;font-family:Arial}
     border-radius: 8px;
     border: 1px solid #fff;
     padding: 8px;
+}
+
+.name-dropdown{
+    font-size: 16px;
+    padding: 8px;
+}
+
+.header-right-content i{
+    padding: 16px;
+}
+
+.time{
+    background: #0873ee;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    color: #fff;
+    padding: 4px 8px;
+}
+
+.header-right-content img{
+    margin-left: 30px;
+    margin-bottom: -7px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    box-shadow: 0px 0px 0px 2px #000;
+} 
+
+.name{
+    display: inline-block;
 }
 
 .topnav {
@@ -113,6 +144,7 @@ body {margin:0;font-family:Arial}
 
 #user-cards{
     display: flex;
+    flex-flow: wrap;
     border-radius: 8px;
     background: aliceblue;
     margin: 35px;
@@ -122,17 +154,25 @@ body {margin:0;font-family:Arial}
     border-radius: 8px;
     background: white;
     margin: 20px;
+    width: 17%;
 }
 
 .user-card img{
     border-radius: 50%;
-    margin: 43px;
+    margin: 28px 70px 10px;
     height: 80px;
     width: 80px;
     box-shadow: 0px 0px 0px 4px #fff,
                 0px 0px 0px 6px lightpink
                 ;
 }    
+
+.user-name{
+    margin: 0;
+    font-weight: bold;
+    color: deepskyblue;
+    text-align: center;
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
