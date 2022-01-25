@@ -25,6 +25,7 @@ body {margin:0;font-family:'Poppins'}
 .header-center-content{
     display: flex;
     align-items: center;
+    margin-left: 250px;
 }
 
 .header-center-content i{
@@ -94,6 +95,11 @@ body {margin:0;font-family:'Poppins'}
   display: none;
 }
 
+.topnav i{
+    font-size: 14px;
+    padding-right: 4px;
+}
+
 .dropdown {
   float: left;
   overflow: hidden;
@@ -129,8 +135,8 @@ body {margin:0;font-family:'Poppins'}
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  background-color: #f9f9f9;
+  color: dodgerblue;
 }
 
 .dropdown-content a:hover {
@@ -156,6 +162,20 @@ body {margin:0;font-family:'Poppins'}
     margin: 12px;
     font-size: 14px;
     padding: 12px;
+    position: relative;
+}
+
+.card-arrow {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: dodgerblue;
+    color: #fff;
 }
 
 .user-card img{
@@ -213,6 +233,11 @@ footer{
     padding: 8px;
 }
 
+.help-desk-text i{
+    color: dodgerblue;
+    padding-right: 4px;
+}
+
 .footer-icons{
     position: absolute;
     top: -50%;
@@ -226,6 +251,7 @@ footer{
     height: 35px;
     border-radius: 100px;
     background: dodgerblue;
+    color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -263,4 +289,23 @@ footer{
     width: 100%;
     text-align: left;
   }
+}
+
+@media screen and (max-width: 767px) {
+    .header-right-content{
+        display: none;
+    }
+}    
+
+@media screen and (max-width: 1023px) {
+    .header-section1{
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .header-center-content{
+        margin: 0;
+    }   
+    #user-cards{
+        justify-content: center;
+    }    
 }

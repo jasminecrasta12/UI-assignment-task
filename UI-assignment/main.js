@@ -15,6 +15,7 @@ function menuResponsive() {
       let userData = "";
       userList.data.map((values) =>{
             userData += ` <div class="user-card">
+            <i class="fa fa-chevron-down card-arrow"></i>
             <img src=${values.avatar} alt="img">
             <p class="user-name">${values.first_name} ${values.last_name}</p>
             <p class="user-id"><span class="heading">Employee ID:</span>  <span>EMPP123${values.id}</span></p>
