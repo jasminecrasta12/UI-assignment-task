@@ -153,8 +153,9 @@ body {margin:0;font-family:'Poppins'}
 .user-card{
     border-radius: 8px;
     background: white;
-    margin: 20px;
-    width: 17%;
+    margin: 12px;
+    font-size: 14px;
+    padding: 12px;
 }
 
 .user-card img{
@@ -172,6 +173,65 @@ body {margin:0;font-family:'Poppins'}
     font-weight: bold;
     color: deepskyblue;
     text-align: center;
+}
+
+.user-id, .user-email, .user-tel, .user-dep{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+}
+
+.user-dep{
+    border: 0;
+}
+
+.heading{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #0873ee;
+    height: 45px;
+    position: relative;
+}
+
+.footer-copyright{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.help-desk-text{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: white;
+    border: 2px solid #0873ee;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.footer-icons{
+    position: absolute;
+    top: -50%;
+    right: 2%;
+    display: flex;
+}
+
+.footer-icons i{
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: dodgerblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0px 10px;
 }
 
 @media screen and (max-width: 600px) {

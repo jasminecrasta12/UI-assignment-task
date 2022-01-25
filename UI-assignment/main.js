@@ -17,8 +17,10 @@ function menuResponsive() {
             userData += ` <div class="user-card">
             <img src=${values.avatar} alt="img">
             <p class="user-name">${values.first_name} ${values.last_name}</p>
-            
-            <p class="desc">${values.email}</p>
+            <p class="user-id"><span class="heading">Employee ID:</span>  <span>EMPP123${values.id}</span></p>
+            <p class="user-email"><span class="heading">Email:</span> <span>${values.email}</span></p>
+            <p class="user-tel"><span class="heading">Telephone:</span> <span>+444 444 4444</span></p>
+            <p class="user-dep"><span class="heading">Department:</span> <span>Digital Com</span></p>
         </div>`
       })
 
